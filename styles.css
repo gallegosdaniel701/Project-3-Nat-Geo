@@ -1,0 +1,250 @@
+:root{
+    --primary:yellow;
+}
+html{
+    font-size:62.5%;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Lato,sans-serif;
+    background-color:black;
+}
+img{
+    max-width:100%;
+}
+p{
+    font-size:1.6rem;
+}
+
+/* Utilities */
+.upper-text{
+    font-size:1.2rem;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+/*menu*/
+
+nav.menu{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#fff;
+    height:6rem;
+}
+
+.img{
+    height: 5rem;
+}
+.hide{
+    display:none;
+}
+.icons{
+    display:flex;
+    justify-content:space-around;
+    flex-basis:40%;
+}
+@media(min-width:768px){
+    .hide{
+        display:block;
+    }
+}
+    .icons{
+        flex-basis:22%;
+    }
+    .renew-btn{
+        border-bottom:2px solid var(--primary);
+        background-size:50% 200%;
+        background-image:linear-gradient(to bottom,#fff 50%,var(--primary)50%);
+        transition:background-position .2s ease-out,color .2s ease-in-out;
+    }
+    .renew-btn:hover{
+        background-position:0 100%;
+    }
+
+    .icons i{
+        font-size:1.6rem;
+    }
+
+    .subscribe-btn{
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        background-image:linear-gradient(to left black 50%,var(--primary)50%);
+        transition:background-position .2s ease-in-out, color .2s ease-in-out;
+        color:white;
+        padding:1rem;
+    }
+    
+    .subscribe-btn:hover{
+        background-position:0% 0;
+        color:black;
+    }
+
+    header.site-header{
+        background-color:black;
+        text-align:center;
+    }
+
+    .site-header h1{
+        font-size:4rem;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing:.4rem;
+        padding-top:4rem;
+    }
+
+    .site-header .title-description{
+        color:white;
+        font-size:1.6rem;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:2rem;
+    }
+    span.subs-text{
+        border-bottom:.2rem solid(--primary);
+    }
+    spans.subs-text:hover{
+        background-color:var(--primary);
+        color:black;
+        cursor:pointer;
+    }
+
+    @media(min-width:768px){
+        .header-container{
+            display:flex;
+            flex-direction: row-reverse;
+        }
+        .news{
+            flex-basis:60%;
+    }
+    
+    .line{
+        display:block;
+        width:4%;
+        margin:1rem auto 3rem auto;
+        border-bottom: 4px solid var(--primary);
+    }
+
+    .main-news{
+        height:45rem;
+        width:45rem;
+        margin-left:auto;
+        margin-right:auto;
+        background-image:url(img/im1.webp);
+        background-position:bottom center;
+        background-size:cover;
+
+    }
+
+    .main-news-text{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+        height:90%;
+        text-align:left;
+        padding:1rem;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        color:white;
+    }
+
+    .main-news-text h2{
+        color:white;
+        text-transform:uppercase;
+        letter-spacing: .2rem;
+        font: size 1.2em;
+    }
+
+    .main-news-text .title{
+        font-size:4rem;
+        font-weight:bold;
+    }
+
+    .secondary-news{
+        height:45rem;
+        width:45rem;
+        margin:2rem auto;
+    }
+
+    .secondary-news-text{
+        margin-top: -3px;
+        width:44rem;
+        background-color:white;
+        border:1px solid black;
+        text-align:left;
+        padding-left:1rem;
+    }
+    .secondary-news img:hover{
+        border-bottom:0.5rem solid var(--primary);
+    }
+    .secondary-news-text h2{
+        color:gray;
+        text-transform:uppercase;
+        letter-spacing:.2rem;
+        font-size:1.2rem;
+        margin-bottom:1rem;
+    }
+
+    .secondary-news-text p{
+        font-size:2rem;
+        font-weight:700;
+        margin-bottom:1rem;
+    }
+
+    .main-news .read-text{
+        font-size:1.2rem;
+        text-transform:uppercase;
+        letter-spacing:3px;
+        color:white;
+    }
+
+    .secondary-news-text .read-text{
+        color:black;
+        font-size:1.2rem;
+        text-transform:uppercase;
+        letter-spacing:3px;
+    }
+
+    @media(min-width:768px){
+        .main-news{
+            width:70rem;
+            height:42rem;
+        }
+    }
+        .secondary-news{
+            width:25rem;
+        }
+        .secondary-news-text{
+            width:24rem;
+        }
+        .secondary-news-container{
+            display:flex;
+        }
+    }
+        .picks-element{
+            display:flex;
+            width:86%;
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:1rem;
+        }
+
+        .picks-element img{
+            width:9rem;
+            height:9rem;
+        }
+
+        .picks-element p{
+            color:white;
+            font-weight:700;
+            margin-left:3rem;
+        }
